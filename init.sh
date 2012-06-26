@@ -1,5 +1,6 @@
 #!/bin/bash
 VIM_CONFIG="${HOME}/.vimrc"
+VIM_TMP_DIR="${HOME}/.vim_tmp"
 
 msg()
 {
@@ -15,8 +16,11 @@ run_git()
 
 create_vimrc()
 {
-  msg "creating ${VIM_CONFIG}"
+  msg "creating '${VIM_CONFIG}'"
   echo "source ~/.vim/rc.vim" > ${VIM_CONFIG}
+
+  msg "creating temp file dir '${VIM_TMP_DIR}'"
+  mkdir -p ${VIM_TMP_DIR}
 }
 
 
