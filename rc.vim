@@ -67,4 +67,8 @@ if has("autocmd")
 endif
 
 
-colorscheme zenburn
+if has("gui_running")
+  colorscheme Monokai
+else
+  colorscheme zenburn
+endif
