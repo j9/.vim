@@ -10,32 +10,32 @@ call pathogen#helptags()
 
 filetype plugin indent on
 
-set number    		" rindu numuri
-set showtabline=2	" radit tabu rindinu visu laiku
-set tabpagemax=15       " maximalais tabu skaits cik var atvert
-set numberwidth=5	" cik plata ir ciparu kolona sanos
-set showcmd   		" rada komandas
-set incsearch 		" pieaugossa meklesana
-set hlsearch		" hailaito searcha matchus
-set showmatch		" radit machojoso iekavu
-set textwidth=120   " teksta platums (kolonnu skaits)
-set smartindent		" automatisko atkapju liksana, veel var but 'cindent' vai 'autoindent'
-set expandtab		" tabu vieta uzliek tik spaces cik taba lielums
-set shiftwidth=2	" atstarpes izmers kad lieto CTRL-T vai auto indentinga tuljus
-set tabstop=2		" tab izmers spiezhot <TAB>
-set laststatus=2	" vienmer radit statusrindu ari tad kad ir viens fails
-set matchpairs=(:),{:},[:],<:> " kadus parus matchos uz %
-set history=50		" komandu atminja
+set number    		" show line numbers
+set showtabline=2	" show tab line all the time
+set tabpagemax=15 " max number of tabs openable at once
+set numberwidth=5	" width of line number column 
+set showcmd   		" show commands
+set incsearch 		" incremental search
+set hlsearch		  " highlighted search matches
+set showmatch		  " show matching brace
+set textwidth=120 " text width (column count)
+set smartindent		" automatic indenting (possible also 'cindent' and 'autoindent')
+set expandtab		  " replace tabs with spaces
+set shiftwidth=2	" space size when using auto indenting tools
+set tabstop=2		  " tab width
+set laststatus=2	" always show status bar, also when only single file is available
+set matchpairs=(:),{:},[:],<:> " types of brackets to match with %
+set history=50		" command memory size
 set ignorecase		" case insensitive mode
-set smartcase		" ja ir kaut viens vards ar lielo burtu parversas par case sensitive
+set smartcase		  " if any word have capital letter, search automatically turns to case sensitive
 set statusline=\"%F\"\ %h%r%m[%l,%c%V][%p%%]%=[%L\ lines][%{&encoding}][FTYPE=%Y][FORMAT=%{&ff}]
-set nobackup		" neglabat backup failu
-set scrolloff=5    " skrolejot tekstu, cik rindas nepartraukti turet virs un zem kursora, lai nekad nesasniegtu lapas apaksu(augsu)
-set wildmenu        " radit status komandu autocomplete
+set nobackup		  " don't store backup 
+set scrolloff=5   " lines to scroll above and below the cursor
+set wildmenu      " status bar command autocomplete
 set grepprg=grep\ -nH\ $*
 set clipboard+=unnamed " Yanks go on clipboard instead of "* register
-set encoding=utf-8  " defaultais enkodings
-set novisualbell    " netroksnot
+set encoding=utf-8
+set novisualbell    " no noise
 set noerrorbells    " --- "" ---
 set fileformats=unix,dos,mac " file type recognition
 
@@ -63,7 +63,7 @@ if has('syntax')
 endif
 
 if has("autocmd")
-  autocmd! bufwritepost .vimrc source ~/.vim/rc.vim
+  autocmd! bufwritepost ~/.vim/rc.vim so ~/.vimrc
 endif
 
 
