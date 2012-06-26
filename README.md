@@ -3,5 +3,8 @@ My vim config
 
 Instalation
 ============
-#. Clone and run setup.sh
+
+#. Clone and run setup.sh ::
+
 #. Profit!
+
