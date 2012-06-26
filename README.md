@@ -2,9 +2,8 @@ My vim config
 =============
 
 Instalation
-============
+-----------
 
-#. Clone and run setup.sh ::
-
-#. Profit!
+1. Clone and run setup.sh ::
+2. Profit!
 
