@@ -72,3 +72,10 @@ if has("gui_running")
 else
   colorscheme zenburn
 endif
+
+" NERDCommenter
+let NERDSpaceDelims = 1
+
+nmap <silent> <F2> <leader>ci
+imap <silent> <F2> <Esc><leader>cii
+vmap <silent> <F2> <leader>ci
