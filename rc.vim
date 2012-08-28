@@ -8,6 +8,7 @@ filetype off
 call pathogen#infect()
 call pathogen#helptags()
 
+set nocp
 filetype plugin indent on
 
 set number    		" show line numbers
@@ -79,3 +80,13 @@ let NERDSpaceDelims = 1
 nmap <silent> <F2> <leader>ci
 imap <silent> <F2> <Esc><leader>cii
 vmap <silent> <F2> <leader>ci
+
+" PyMode settings
+" Disable autofolding the code
+let g:pymode_folding = 0
+
+" NERDTree
+nmap <silent> <special> <F3> :NERDTreeToggle<RETURN>
+
+" writing read only files through sudo
+cmap w!! w !sudo tee >/dev/null %
