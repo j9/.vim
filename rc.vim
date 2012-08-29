@@ -43,6 +43,11 @@ set fileformats=unix,dos,mac " file type recognition
 " swp file fix
 set directory=~/.vim_tmp " backup files directory, instead of droping anywhere on fs
 
+" clang
+let g:clang_complete_auto = 0
+let g:clang_complete_copen = 0
+let g:clang_debug = 0
+
 if has('mac')
   set guifont=Monaco:h10
 elseif has('unix') && !has('mac')
