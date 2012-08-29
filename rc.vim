@@ -88,5 +88,8 @@ let g:pymode_folding = 0
 " NERDTree
 nmap <silent> <special> <F3> :NERDTreeToggle<RETURN>
 
+" Tagbar
+nmap <silent> <special> <F4> :TagbarToggle<CR>
+
 " writing read only files through sudo
 cmap w!! w !sudo tee >/dev/null %
