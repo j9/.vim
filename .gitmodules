@@ -25,6 +25,7 @@
 [submodule "bundle/vim-session.git"]
 	path = bundle/vim-session.git
 	url = https://github.com/xolox/vim-session.git
+  ignore = untracked
 [submodule "bundle/vim-fugitive.git"]
 	path = bundle/vim-fugitive.git
 	url = https://github.com/tpope/vim-fugitive.git
