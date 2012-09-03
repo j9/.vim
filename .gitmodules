@@ -32,3 +32,6 @@
 [submodule "bundle/vim-unimpaired.git"]
 	path = bundle/vim-unimpaired.git
 	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "bundle/gundo.vim"]
+	path = bundle/gundo.vim
+	url = https://github.com/sjl/gundo.vim.git
