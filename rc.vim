@@ -86,6 +86,10 @@ nmap <silent> <F2> <leader>ci
 imap <silent> <F2> <Esc><leader>cii
 vmap <silent> <F2> <leader>ci
 
+" vim-session plugin
+let g:session_autoload = 'no'
+let g:session_autosave = 'yes'
+
 " PyMode settings
 " Disable autofolding the code
 let g:pymode_folding = 0
