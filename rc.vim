@@ -3,6 +3,9 @@
 " Pathogen load
 runtime bundle/vim-pathogen.git/autoload/pathogen.vim
 
+" load Man page plugin, to read manpages with :Man
+runtime! ftplugin/man.vim 
+
 filetype off
 
 call pathogen#infect()
