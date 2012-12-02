@@ -43,6 +43,7 @@ set novisualbell    " no noise
 set noerrorbells    " --- "" ---
 set fileformats=unix,dos,mac " file type recognition
 set autochdir " change current working directory to the files location
+set guioptions=aegiLr " add +mT get the toolbar and menubar back
 
 " swp file fix
 set directory=~/.vim_tmp " backup files directory, instead of droping anywhere on fs
