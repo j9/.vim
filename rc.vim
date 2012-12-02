@@ -116,3 +116,8 @@ map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
+
+" map Ctrl-S to save files (from wikia.com tips)
+nnoremap <silent> <C-S> :if expand("%") == ""<CR>browse confirm w<CR>else<CR>confirm w<CR>endif<CR>
+imap <C-s> <C-o><C-s>
+vmap <C-s> <C-c><C-s>
