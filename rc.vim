@@ -109,6 +109,9 @@ nmap <silent> <special> <F4> :TagbarToggle<CR>
 " Gundo
 nnoremap <F5> :GundoToggle<CR>
 
+"ctrlp.vim
+let g:ctrlp_working_path_mode='ra'
+
 " writing read only files through sudo
 cmap w!! w !sudo tee >/dev/null %
 
