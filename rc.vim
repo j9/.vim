@@ -97,7 +97,7 @@ let g:session_autosave = 'yes'
 
 " PyMode settings
 " Disable autofolding the code
-let g:pymode_folding = 0
+let g:pymode_folding = 1
 let g:pymode_rope_goto_def_newwin = 'new'
 
 " NERDTree
