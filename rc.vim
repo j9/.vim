@@ -101,6 +101,7 @@ let g:pymode_folding = 1
 let g:pymode_rope_goto_def_newwin = 'new'
 
 " NERDTree
+let NERDTreeIgnore=['\~$', '.pyc$[[file]]']
 nmap <silent> <special> <F3> :NERDTreeToggle<RETURN>
 
 " Tagbar
