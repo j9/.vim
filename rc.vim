@@ -56,7 +56,7 @@ let g:clang_debug = 0
 if has('mac')
   set guifont=Monaco:h10
 elseif has('unix') && !has('mac')
-  set guifont=Monospace\ 9
+  set guifont=Monospace\ 8
 endif
 
 " sessions
