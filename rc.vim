@@ -17,7 +17,7 @@ filetype plugin indent on
 set number    		" show line numbers
 set showtabline=2	" show tab line all the time
 set tabpagemax=15 " max number of tabs openable at once
-set numberwidth=5	" width of line number column 
+set numberwidth=4	" width of line number column 
 set showcmd   		" show commands
 set incsearch 		" incremental search
 set hlsearch		  " highlighted search matches
@@ -126,3 +126,8 @@ map <c-h> <c-w>h
 nnoremap <silent> <C-S> :if expand("%") == ""<CR>browse confirm w<CR>else<CR>confirm w<CR>endif<CR>
 imap <C-s> <C-o><C-s>
 vmap <C-s> <C-c><C-s>
+
+" <Numbers> switching plugin
+nnoremap <silent> <leader>n :NumbersToggle<CR>
+
+" set colorcolumn=80
