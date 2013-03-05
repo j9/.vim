@@ -41,9 +41,6 @@
 [submodule "bundle/ack.vim.git"]
 	path = bundle/ack.vim.git
 	url = https://github.com/mileszs/ack.vim.git
-[submodule "bundle/vdebug.git"]
-	path = bundle/vdebug.git
-	url = https://github.com/joonty/vdebug.git
 [submodule "bundle/numbers.vim"]
 	path = bundle/numbers.vim
 	url = https://github.com/myusuf3/numbers.vim.git
