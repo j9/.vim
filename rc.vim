@@ -53,10 +53,16 @@ let g:clang_complete_auto = 0
 let g:clang_complete_copen = 0
 let g:clang_debug = 0
 
+" set hostname and operating system dependent fonts and sizes
 if has('mac')
   set guifont=Monaco:h10
 elseif has('unix') && !has('mac')
-  set guifont=Monospace\ 8
+  let s:hostname = substitute(system('hostname'), '\n', '', '')
+  let s:fontsize = 8
+  if s:hostname == "vafele"
+    let s:fontsize = 9
+  endif
+  execute ':set guifont=Monospace\ ' . s:fontsize
 endif
 
 " sessions
