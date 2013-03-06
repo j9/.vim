@@ -18,5 +18,6 @@ Inside the `.vim` directory, run the following:
 Adding new plugin
 -----------------
 ``git submodule add http://<url> bundle/<plugin_name>
+``git submodule update --init``
 ``git add``
 ``git commit -m "New plugin <plugin_name> added."``
