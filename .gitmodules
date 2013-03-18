@@ -19,9 +19,6 @@
 [submodule "bundle/syntastic.git"]
 	path = bundle/syntastic.git
 	url = https://github.com/scrooloose/syntastic.git
-[submodule "bundle/clang-complete.git"]
-	path = bundle/clang-complete.git
-	url = https://github.com/Rip-Rip/clang_complete.git
 [submodule "bundle/vim-session.git"]
 	path = bundle/vim-session.git
 	url = https://github.com/xolox/vim-session.git
