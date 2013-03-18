@@ -48,11 +48,6 @@ set guioptions=aegiLr " add +mT get the toolbar and menubar back
 " swp file fix
 set directory=~/.vim_tmp " backup files directory, instead of droping anywhere on fs
 
-" clang
-let g:clang_complete_auto = 0
-let g:clang_complete_copen = 0
-let g:clang_debug = 0
-
 " set hostname and operating system dependent fonts and sizes
 if has('mac')
   set guifont=Monaco:h10
@@ -88,6 +83,41 @@ if has("gui_running")
   colorscheme Monokai
 else
   colorscheme zenburn
+endif
+
+if has('cscope')
+  set cscopetag
+  set csto=0
+  set cscopequickfix=s-,g-,c-,d-,t-,e-,f-,i-
+
+  " add any database in current directory
+  if filereadable("cscope.out")
+    exe "cscope add cscope.out " . getcwd()
+  elseif $CSCOPE_DB != ""
+    cscope add $CSCOPE_DB
+  endif
+
+  " Using <Leader> then a search type makes the vim window
+  " split horizontally, with search result displayed in
+  " the new window.
+  nmap <Leader>s :scs find s <C-R>=expand("<cword>")<CR><CR>
+  nmap <Leader>g :scs find g <C-R>=expand("<cword>")<CR><CR>
+  nmap <Leader>c :scs find c <C-R>=expand("<cword>")<CR><CR>
+  nmap <Leader>t :scs find t <C-R>=expand("<cword>")<CR><CR>
+  nmap <Leader>e :scs find e <C-R>=expand("<cword>")<CR><CR>
+  nmap <Leader>f :scs find f <C-R>=expand("<cfile>")<CR><CR>
+  nmap <Leader>i :scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+  nmap <Leader>d :scs find d <C-R>=expand("<cword>")<CR><CR>
+
+  " Hitting <Leader> *twice* before the search type does a vertical
+  " split instead of a horizontal one
+  nmap <Leader><Leader>s :vert scs find s <C-R>=expand("<cword>")<CR><CR>
+  nmap <Leader><Leader>g :vert scs find g <C-R>=expand("<cword>")<CR><CR>
+  nmap <Leader><Leader>c :vert scs find c <C-R>=expand("<cword>")<CR><CR>
+  nmap <Leader><Leader>t :vert scs find t <C-R>=expand("<cword>")<CR><CR>
+  nmap <Leader><Leader>e :vert scs find e <C-R>=expand("<cword>")<CR><CR>
+  nmap <Leader><Leader>i :vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+  nmap <Leader><Leader>d :vert scs find d <C-R>=expand("<cword>")<CR><CR>
 endif
 
 " NERDCommenter
