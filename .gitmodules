@@ -41,3 +41,6 @@
 [submodule "bundle/numbers.vim"]
 	path = bundle/numbers.vim
 	url = https://github.com/myusuf3/numbers.vim.git
+[submodule "bundle/latex-box.vim"]
+	path = bundle/latex-box.vim
+	url = http://github.com/LaTeX-Box-Team/LaTeX-Box.git
