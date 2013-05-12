@@ -166,4 +166,55 @@ vmap <C-s> <C-c><C-s>
 " <Numbers> switching plugin
 nnoremap <silent> <leader>n :NumbersToggle<CR>
 
+function! MoveBuf(direction)
+    let bufno = bufnr("%")
+    hide
+    exec "wincmd " . a:direction
+    new
+    exec "buffer " . bufno
+endfunction
+
+map <C-W><M-h> :call MoveBuf("h")<CR>
+map <C-W><M-l> :call MoveBuf("l")<CR>
+map <C-W><M-j> :call MoveBuf("j")<CR>
+map <C-W><M-k> :call MoveBuf("k")<CR>
+
+" custom tab labels, for easier navigation
+function! GuiTabLabel()
+    let label = ''
+    let modified = ''
+    let bufnrlist = tabpagebuflist(v:lnum)
+
+    " Add '+' if one of the buffers in the tab page is modified
+    for bufnr in bufnrlist
+        if getbufvar(bufnr, "&modified")
+            let modified = '+'
+            break
+        endif
+    endfor
+
+    " Append the number of windows in the tab page if more than one
+    let wincount = tabpagewinnr(v:lnum, '$')
+    let label .= wincount . modified . ' '
+
+    " Append the buffer name (not full path)
+    return "%N:" . label . "/ %t"
+endfunction
+
+set guitablabel=%!GuiTabLabel()
+
+" fast tab switching
+nmap <silent> <M-n> :tabnext<CR>
+nmap <silent> <M-p> :tabprev<CR>
+
+nmap <silent> <M-1> :tabnext 1<CR>
+nmap <silent> <M-2> :tabnext 2<CR>
+nmap <silent> <M-3> :tabnext 3<CR>
+nmap <silent> <M-4> :tabnext 4<CR>
+nmap <silent> <M-5> :tabnext 5<CR>
+nmap <silent> <M-6> :tabnext 6<CR>
+nmap <silent> <M-7> :tabnext 7<CR>
+nmap <silent> <M-8> :tabnext 8<CR>
+nmap <silent> <M-9> :tabnext 9<CR>
+
 " set colorcolumn=80
