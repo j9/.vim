@@ -45,3 +45,6 @@
 	path = bundle/YouCompleteMe.git
 	url = https://github.com/Valloric/YouCompleteMe
   ignore = dirty
+[submodule "bundle/vim-misc.git"]
+	path = bundle/vim-misc.git
+	url = https://github.com/xolox/vim-misc
