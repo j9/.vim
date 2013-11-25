@@ -52,3 +52,6 @@
 	path = bundle/indentLine.git
 	url = https://github.com/Yggdroot/indentLine
   ignore = untracked
+[submodule "bundle/vim-projectlocal.vim"]
+	path = bundle/vim-projectlocal.vim
+	url = https://github.com/krisajenkins/vim-projectlocal
