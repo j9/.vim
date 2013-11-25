@@ -48,3 +48,6 @@
 [submodule "bundle/vim-misc.git"]
 	path = bundle/vim-misc.git
 	url = https://github.com/xolox/vim-misc
+[submodule "bundle/indentLine.git"]
+	path = bundle/indentLine.git
+	url = https://github.com/Yggdroot/indentLine

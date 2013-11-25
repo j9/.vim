@@ -44,6 +44,7 @@ set noerrorbells    " --- "" ---
 set fileformats=unix,dos,mac " file type recognition
 set autochdir " change current working directory to the files location
 set guioptions=aegiLr " add +mT get the toolbar and menubar back
+set list listchars=tab:\|\
 
 " swp file fix
 set directory=~/.vim_tmp " backup files directory, instead of droping anywhere on fs
@@ -148,6 +149,11 @@ nnoremap <F5> :GundoToggle<CR>
 
 "ctrlp.vim
 let g:ctrlp_working_path_mode='ra'
+
+"lineIndent
+"let g:indentLine_color_term = 239
+"let g:indentLine_color_gui = '#A4E57E'
+"let g:indentLine_char = '│'
 
 " writing read only files through sudo
 cmap w!! w !sudo tee >/dev/null %
