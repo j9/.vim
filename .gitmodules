@@ -51,3 +51,4 @@
 [submodule "bundle/indentLine.git"]
 	path = bundle/indentLine.git
 	url = https://github.com/Yggdroot/indentLine
+  ignore = untracked
