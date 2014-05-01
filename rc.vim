@@ -224,4 +224,32 @@ nmap <silent> <M-7> :tabnext 7<CR>
 nmap <silent> <M-8> :tabnext 8<CR>
 nmap <silent> <M-9> :tabnext 9<CR>
 
+
+" copied from linuxsty plugin
+function! SetLinuxFormatting()
+    autocmd!
+
+    autocmd FileType c,cpp call s:LinuxSettings()
+    autocmd FileType diff,kconfig
+
+    filetype detect
+endfunc
+
+command! SetLinuxFormatting call SetLinuxFormatting()
+
+function! s:LinuxSettings()
+    setlocal tabstop=8
+    setlocal shiftwidth=8
+    setlocal textwidth=80
+    setlocal noexpandtab
+
+    setlocal cindent
+    setlocal formatoptions=tcqlron
+    setlocal cinoptions=:0,l1,t0,g0
+
+    setlocal wildignore+=*.ko,*.mod.c,*.order,modules.builtin
+endfunction
+
+nnoremap <silent> <leader>k :SetLinuxFormatting<cr><cr>
+
 " set colorcolumn=80
