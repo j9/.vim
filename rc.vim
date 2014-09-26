@@ -252,4 +252,7 @@ endfunction
 
 nnoremap <silent> <leader>k :SetLinuxFormatting<cr><cr>
 
+" deselect search highlight
+nnoremap <silent> <leader>/ :nohlsearch<CR>
+
 " set colorcolumn=80
