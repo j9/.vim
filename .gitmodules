@@ -55,3 +55,6 @@
 [submodule "bundle/vim-projectlocal.vim"]
 	path = bundle/vim-projectlocal.vim
 	url = https://github.com/krisajenkins/vim-projectlocal
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/bling/vim-airline
