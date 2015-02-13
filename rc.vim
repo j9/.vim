@@ -81,11 +81,7 @@ if has("autocmd")
 endif
 
 
-if has("gui_running")
-  colorscheme Monokai
-else
-  colorscheme zenburn
-endif
+colorscheme Monokai
 
 if has('cscope')
   set cscopetag
