@@ -54,3 +54,6 @@
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline
+[submodule "bundle/YouCompleteMe.git"]
+	path = bundle/YouCompleteMe.git
+	url = https://github.com/Valloric/YouCompleteMe.git
