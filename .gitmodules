@@ -41,10 +41,6 @@
 [submodule "bundle/latex-box.vim"]
 	path = bundle/latex-box.vim
 	url = http://github.com/LaTeX-Box-Team/LaTeX-Box.git
-[submodule "bundle/YouCompleteMe.git"]
-	path = bundle/YouCompleteMe.git
-	url = https://github.com/Valloric/YouCompleteMe
-  ignore = dirty
 [submodule "bundle/vim-misc.git"]
 	path = bundle/vim-misc.git
 	url = https://github.com/xolox/vim-misc
