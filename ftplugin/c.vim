@@ -5,7 +5,7 @@ setlocal nolist
 setlocal textwidth=80
 
 setlocal foldcolumn=4
-setlocal foldmethod=indent
+setlocal foldmethod=syntax
 setlocal foldlevel=1
 
 setlocal cindent
