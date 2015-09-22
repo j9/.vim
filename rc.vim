@@ -133,6 +133,7 @@ let g:session_autosave = 'yes'
 " Disable autofolding the code
 let g:pymode_folding = 1
 let g:pymode_rope_goto_def_newwin = 'new'
+let g:pymode_rope_lookup_project = 1
 
 " NERDTree
 let NERDTreeIgnore=['\~$', '.pyc$[[file]]', '^cscope.*[[file]]', '.o$[[file]]']
