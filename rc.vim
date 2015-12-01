@@ -24,7 +24,7 @@ set hlsearch                   " highlighted search matches
 set showmatch                  " show matching brace
 set textwidth=120              " text width (column count)
 set smartindent                " automatic indenting (possible also 'cindent' and 'autoindent')
-set expandtab                  " replace tabs with spaces
+set noexpandtab                " replace tabs with spaces
 set shiftwidth=2               " space size when using auto indenting tools
 set tabstop=2                  " tab width
 set laststatus=2               " always show status bar, also when only single file is available
