@@ -46,6 +46,7 @@ set autochdir                  " change current working directory to the files l
 set guioptions=aegiLr          " add +mT get the toolbar and menubar back
 set list                       " show listings
 set listchars=tab:\|\          " replace tabs with |\\\\\
+set completeopt=longest,menu   " autocompletion menu setup
 
 " swp file fix
 set directory=~/.vim_tmp " backup files directory, instead of droping anywhere on fs
