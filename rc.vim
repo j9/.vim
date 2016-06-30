@@ -59,6 +59,8 @@ elseif has('unix') && !has('mac')
   let s:fontsize = 8
   if s:hostname == "vafele"
     let s:fontsize = 9
+  elseif s:hostname == "dex"
+    let s:fontsize = 10
   endif
   execute ':set guifont=Monospace\ ' . s:fontsize
 endif
