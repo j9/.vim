@@ -138,6 +138,20 @@ let g:pymode_folding = 1
 let g:pymode_rope_goto_def_newwin = 'new'
 let g:pymode_rope_lookup_project = 1
 
+let g:pymode_lint = 0
+let g:pymode_lint_on_write = 1
+" let g:pymode_lint_unmodified = 1
+let g:pymode_lint_checkers = ['mccbe']
+" let g:pymode_lint_checkers = ['pylint', 'pep8', 'pep257', 'mccbe']
+let g:pymode_lint_sort = ['E', 'C', 'I']
+" Which errors to ignore (see pylint codes)
+"let g:pymode_lint_ignore = ""
+
+" Disable syntax check for python files as that's handled by pymode
+" let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['python'] }
+let g:syntastic_python_checkers = ['pep8', 'pep257', 'pylint', 'python']
+let g:syntastic_auto_loc_list = 1
+
 " NERDTree
 let NERDTreeIgnore=['\~$', '.pyc$[[file]]', '^cscope.*[[file]]', '.o$[[file]]']
 nmap <silent> <special> <F3> :NERDTreeToggle<RETURN>
