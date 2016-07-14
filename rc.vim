@@ -151,6 +151,9 @@ let g:pymode_lint_sort = ['E', 'C', 'I']
 " let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['python'] }
 let g:syntastic_python_checkers = ['flake8', 'pylint', 'python']
 let g:syntastic_auto_loc_list = 1
+let g:syntastic_aggregate_errors = 1
+
+let g:syntastic_python_flake8_args='--ignore D203'
 
 " NERDTree
 let NERDTreeIgnore=['\~$', '.pyc$[[file]]', '^cscope.*[[file]]', '.o$[[file]]']
