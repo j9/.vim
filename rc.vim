@@ -149,7 +149,7 @@ let g:pymode_lint_sort = ['E', 'C', 'I']
 
 " Disable syntax check for python files as that's handled by pymode
 " let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['python'] }
-let g:syntastic_python_checkers = ['pep8', 'pep257', 'pylint', 'python']
+let g:syntastic_python_checkers = ['flake8', 'pylint', 'python']
 let g:syntastic_auto_loc_list = 1
 
 " NERDTree
